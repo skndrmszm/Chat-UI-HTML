@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat UI</title>
+        <link rel="stylesheet" href="css/dashboard.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <!-- Side bar -->
+    <div class="side-bar">
+      <div class="profile">
+        <img src="images/profiles/me.jpeg" alt="Me" />
+        <span>Iskandar Musa</span>
+      </div>
+      <div class="menu">
+        <div class="item"><a class="sub-btn"><i class="fas fa-table"></i>Home</a></div>
+        <div class="item active"><a href="#"><i class="fas fa-comment-dots"></i>Chat</a></div>
+        <div class="item"><a href="#"><i class="fas fa-bell"></i>Notification</a></div>
+        <div class="item"><a href="#"><i class="fas fa-envelope"></i>Mail</a></div>
+        <div class="item"><a class="sub-btn"><i class="fas fa-cogs"></i>Settings</a></div>
+        <div class="item"><a href="#"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="item"><a href="#"><i class="fas fa-sign-out-alt"></i>Sign out</a></div>
+      </div>
+    </div>
+
+    <section class="main">
+      <div id="chat-container">
+        <div id="search-container">
+          <input type="text" placeholder="Search" />
+        </div>
+        <div id="conversation-list">
+          <div class="conversation active">
+            <img src="images/profiles/iskandar.jpg" alt="Iskandar" />
+            <div class="title-text">
+              Iskandar
+            </div>
+            <div class="created-date">
+              2 min ago
+            </div>
+            <div class="conversation-message">
+              This is a message that shouldn't be read but here I am exposing it
+            </div>
+          </div>
+          <!-- -->
+          <div class="conversation">
+            <img src="images/profiles/ilyas.jpeg" alt="Ilyas" />
+            <div class="title-text">
+              Ilyas
+            </div>
+            <div class="created-date">
+              5 hours ago
+            </div>
+            <div class="conversation-message">
+              I want ice cream
+            </div>
+          </div>
+          <!-- -->
+          <div class="conversation">
+            <img src="images/profiles/affendy.jpeg" alt="Affendy" />
+            <div class="title-text">
+              Affendy
+            </div>
+            <div class="created-date">
+              Yesterday
+            </div>
+            <div class="conversation-message">
+              Do you have the document I asked you to deliver?
+            </div>
+          </div>
+          <!-- -->
+          <div class="conversation">
+            <img src="images/profiles/ainur.jpeg" alt="Ainur" />
+            <div class="title-text">
+              Ainur
+            </div>
+            <div class="created-date">
+              Yesterday
+            </div>
+            <div class="conversation-message">
+              WHERE IS MY MASK???
+            </div>
+          </div>
+          <!-- -->
+          <div class="conversation">
+            <img src="images/profiles/none.png" alt="Abdul" />
+            <div class="title-text">
+              Abdul
+            </div>
+            <div class="created-date">
+              Jan 20
+            </div>
+            <div class="conversation-message">
+              Free for dinner?
+            </div>
+          </div>
+          <!-- -->
+          <div class="conversation">
+            <img src="images/profiles/none.png" alt="Azrul" />
+            <div class="title-text">
+              Azrul
+            </div>
+            <div class="created-date">
+              Jan 19
+            </div>
+            <div class="conversation-message">
+              Yea sure..
+            </div>
+          </div>
+          <!-- -->
+          <div class="conversation">
+            <img src="images/profiles/none.png" alt="Zulfitri" />
+            <div class="title-text">
+              Zulfitri
+            </div>
+            <div class="created-date">
+              Jan 17
+            </div>
+            <div class="conversation-message">
+              Nope I'm done for today
+            </div>
+          </div>
+          <!-- -->
+          <div class="conversation">
+            <img src="images/profiles/none.png" alt="Amir" />
+            <div class="title-text">
+              Amir
+            </div>
+            <div class="created-date">
+              Jan 6
+            </div>
+            <div class="conversation-message">
+              Tak ajak!
+            </div>
+          </div>
+        </div>
+        <div id="new-message-container">
+          <a href="#">+</a>
+        </div>
+        <div id="chat-title">
+          <img src="images/profiles/iskandar.jpg" alt="Iskandar" />
+          <span>Iskandar</span>
+        </div>
+        <div id="chat-message-list">
+          <div class="message-row other-message">
+            <div class="message-content">
+              <img src="images/profiles/iskandar.jpg" alt="Iskandar" />
+              <div class="message-text">This is a message that shouldn't be read but here I am exposing it</div>
+              <div class="message-time">2 min ago</div>
+            </div>
+          </div>
+          <!-- -->
+          <div class="message-row you-message">
+            <div class="message-content"> 
+              <div class="message-text">I hope so</div>
+              <div class="message-time">2 min ago</div>
+            </div>
+          </div>
+          <!-- -->
+          <div class="message-row other-message">
+            <div class="message-content">
+              <img src="images/profiles/iskandar.jpg" alt="Iskandar" />
+              <div class="message-text">I hope covid ends soon..</div>
+              <div class="message-time">3 min ago</div>
+            </div>
+          </div>
+          <!-- -->
+          <div class="message-row you-message">
+            <div class="message-content"> 
+              <div class="message-text">What?</div>
+              <div class="message-time">2 hours ago</div>
+            </div>
+          </div>
+          <!-- -->
+          <div class="message-row other-message">
+            <div class="message-content">
+              <img src="images/profiles/iskandar.jpg" alt="Iskandar" />
+              <div class="message-text">I know you there</div>
+              <div class="message-time">2 hours ago</div>
+            </div>
+          </div>
+          <!-- -->
+          <div class="message-row other-message">
+            <div class="message-content">
+              <img src="images/profiles/iskandar.jpg" alt="Iskandar" />
+              <div class="message-text">Hola</div>
+              <div class="message-time">2 hours ago</div>
+            </div>
+          </div>
+          <!-- -->
+          <div class="message-row other-message">
+            <div class="message-content">
+              <img src="images/profiles/iskandar.jpg" alt="Iskandar" />
+              <div class="message-text">Yuuhuu</div>
+              <div class="message-time">2 hours ago</div>
+            </div>
+          </div>
+          <!-- -->
+          <div class="message-row other-message">
+            <div class="message-content">
+              <img src="images/profiles/iskandar.jpg" alt="Iskandar" />
+              <div class="message-text">Yoooo</div>
+              <div class="message-time">2 hours ago</div>
+            </div>
+          </div>
+        </div>
+        <div id="chat-form">
+          <img src="images/attachment.png" alt="Add Attachment" />
+          <img src="images/emoji.png" alt="Add Emojis" />
+          <input type="text" placeholder="type a message" />
+          <img src="images/send.png" alt="Send Message" />
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        //jquery for toggle sub menus
+        $('.sub-btn').click(function(){
+          $(this).next('.sub-menu').slideToggle();
+          $(this).find('.dropdown').toggleClass('rotate');
+        });
+    </script>
+
+  </body>
+  </html>  
